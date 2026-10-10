@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ko"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eunhee Jeong | AI Agent Engineer</title>
+<meta name="description" content="정은희 — LLM Agent를 만들고 평가로 검증하는 AI Agent 엔지니어">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+:root{--bg:#fff;--ink:#222;--sub:#6b6b6b;--line:#e8e8e8;--link:#2f5fb3;--thumb:#f6f6f6}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141518;--ink:#e6e6e6;--sub:#9a9a9a;--line:#2a2b30;--link:#8fb0ff;--thumb:#1d1e22}}
+:root[data-theme="dark"]{--bg:#141518;--ink:#e6e6e6;--sub:#9a9a9a;--line:#2a2b30;--link:#8fb0ff;--thumb:#1d1e22}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Pretendard,"Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;font-size:15.5px;line-height:1.7;word-break:keep-all;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:860px;margin:0 auto;padding:0 24px}
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:58px}
+header .name{font-weight:700;color:var(--ink)}
+header nav{display:flex;gap:20px;font-size:14.5px}header nav a{color:var(--sub)}header nav a:hover{color:var(--ink);text-decoration:none}
+.about{padding:56px 0 8px;display:grid;grid-template-columns:1fr 168px;gap:40px;align-items:start}.avatar{order:2;width:168px;height:168px;border-radius:50%;object-fit:cover;margin-top:6px}
+.about h1{font-size:34px;letter-spacing:-.8px;margin:0 0 4px;font-weight:700}
+.about .role{color:var(--sub);margin:0 0 22px}
+.about p{margin:0 0 12px}
+.interests{color:var(--sub);font-size:14.5px;margin:16px 0}
+.actions{display:flex;gap:18px;flex-wrap:wrap;font-weight:600;margin-top:18px}
+h2{font-size:22px;font-weight:700;letter-spacing:-.4px;margin:0 0 18px}
+section{padding:40px 0;border-top:1px solid var(--line)}
+section.first{border-top:0}
+.news{list-style:none;margin:0;padding:0}
+.news li{display:grid;grid-template-columns:84px 1fr;gap:12px;padding:3px 0}
+.news time{color:var(--sub);font-size:14px}
+.entry{display:grid;grid-template-columns:200px 1fr;gap:24px;padding:16px 0}
+.entry+.entry{border-top:1px dashed var(--line)}
+.thumb{background:var(--thumb);border-radius:6px;overflow:hidden;aspect-ratio:16/10;display:flex;align-items:center;justify-content:center}
+.thumb img{width:100%;height:100%;object-fit:contain;background:#fff}
+.thumb.phone img{object-fit:cover;object-position:top}
+.entry b.t{display:block;font-size:16px;line-height:1.45;margin-bottom:4px}
+.entry p{margin:0 0 6px;font-size:14.5px}
+.entry .meta{color:var(--sub);font-size:13.5px}
+.entry .links{font-size:13.5px;margin-top:4px}
+.entry .links a{margin-right:12px}
+.pub{display:grid;grid-template-columns:200px 1fr;gap:24px;padding:12px 0}
+.thumb.empty{aspect-ratio:auto;background:none}.pub .venue{font-style:italic;color:var(--sub);font-size:14px}
+.pub .role{font-size:12.5px;font-weight:700;color:var(--link);margin-right:6px}
+.row{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.row b{font-size:16px}.row span{color:var(--sub);font-size:14px}
+.item{padding:8px 0}.item p{margin:2px 0 0;font-size:14.5px}
+.skills{display:grid;grid-template-columns:120px 1fr;gap:6px 16px;font-size:14.5px}
+.skills dt{color:var(--sub)}.skills dd{margin:0}
+footer{border-top:1px solid var(--line);padding:28px 0 48px;color:var(--sub);font-size:13.5px}
+@media (max-width:640px){
+ header nav{display:none}
+ .about{padding:36px 0 4px;grid-template-columns:1fr;gap:20px}.avatar{order:0;width:112px;height:112px;margin:0}.about h1{font-size:28px}
+ .entry,.pub{grid-template-columns:1fr;gap:10px}
+ .thumb.empty{display:none}
+ .news li{grid-template-columns:72px 1fr}
+ .skills{grid-template-columns:1fr;gap:0}.skills dd{margin-bottom:8px}
+}
+</style>
+</head><body>
+<header><div class="wrap"><a class="name" href="#">Eunhee Jeong</a>
+<nav><a href="#news">News</a><a href="#projects">Projects</a><a href="#publications">Publications</a><a href="#education">Education</a></nav></div></header>
+<main class="wrap">
+<div class="about">
+  <img class="avatar" src="assets/profile.jpg" alt="정은희 프로필 사진">
+  <div>
+  <h1>정은희 <span style="font-weight:400;color:var(--sub);font-size:.6em">Eunhee Jeong</span></h1>
+  <p class="role">AI Agent Engineer</p>
+  <p><a href="https://uvrlab.org" target="_blank" rel="noopener">KAIST Ubiquitous Virtual Reality Lab</a>에서 석사 과정을 수료하고(지도교수 우운택), LLM 기반 XR 상호작용 저작 연구로 IEEE ISMAR-Adjunct 2024에 제1저자 논문을 발표했습니다.</p>
+  <p>현재는 LLM Agent를 서비스로 만드는 일에 집중하고 있습니다. 멀티 에이전트 · RAG · Tool Calling을 구현하고, Golden Set과 통제 실험, 실제 환경 테스트로 Agent가 잘 동작하는지 측정하고 실패할 때도 안전하게 멈추도록 만듭니다.</p>
+  <div class="interests">LLM Agent · Multi-Agent · RAG · Tool Calling · Evaluation · Fine-tuning</div>
+  <div class="actions"><a href="#projects">Projects</a><a href="Eunhee_Jeong_Portfolio.pdf" target="_blank">Portfolio (PDF)</a><a href="https://github.com/Eunhee-JJ" target="_blank" rel="noopener">GitHub</a></div>
+  </div>
+</div>
+
+<section id="news" class="first"><h2>News</h2>
+<ul class="news"><li><time>Oct 2026</time><span>LangGraph Supervisor 기반 멀티 에이전트 보고서 파이프라인 구현 (보고서 단계 · 라우팅 담당)</span></li><li><time>Sep 2026</time><span>YouTube Tool의 실제 API 실패를 재현 테스트로 추적해 안정화, 경쟁사 분석 초안 7초 이내 생성</span></li><li><time>Aug 2026</time><span>KAIST 문화기술대학원 석사 수료</span></li><li><time>Aug 2026</time><span>폴라로이드 교환 플랫폼 <b>폴짝</b> 1인 개발 · Cloud Run 배포</span></li><li><time>Jul 2026</time><span>SK AI 전문가 양성과정 SKALA 참여 시작</span></li><li><time>Oct 2025</time><span>IEEE ISMAR-Adjunct 2025 공동저자 논문 발표</span></li><li><time>Oct 2024</time><span>IEEE ISMAR-Adjunct 2024 제1저자 논문 발표</span></li></ul></section>
+
+<section id="projects"><h2>Projects</h2><div class="entry"><div class="thumb"><img src="assets/langgraph_graph.svg" alt="" loading="lazy"></div>
+<div><b class="t">KV Cache 기술 평가 멀티 에이전트</b><p>근거 없는 판단을 막는 LangGraph Supervisor 멀티 에이전트. 보고서 단계 3개 노드(종합 평가 · 보고서 생성 · 품질 평가)와 Supervisor 라우팅을 담당했습니다. LLM 역할을 근거 문장 번역으로 좁혀 Hallucination을 줄이고, 근거가 없으면 Unknown을 반환합니다.</p><div class="meta">SKALA 6인 팀 · 2026.09 – 10 · LangGraph, Python, Jinja2</div><div class="links"><a href="https://github.com/DevDAN09/skala-langgraph-team3/tree/jeh_restructure-pdf-guided-architecture" target="_blank" rel="noopener">[Code]</a></div></div></div><div class="entry"><div class="thumb"><img src="assets/cj_p08_i01.png" alt="" loading="lazy"></div>
+<div><b class="t">마케팅 리서치 Agent · YouTube Tool</b><p>LangChain Tool Calling 기반 YouTube 검색 · 수집 Tool. Mock 테스트를 통과한 뒤 실제 API에서만 발생한 ID 추출 실패를 재현 테스트 → 수정 → 회귀 테스트로 해결하고 fallback을 적용했습니다. 수작업 약 30분 걸리던 경쟁사 분석 초안을 <b>7초 이내</b>에 생성합니다.</p><div class="meta">SKALA 팀 프로젝트 · 2026.09 · LangChain, YouTube Data API</div><div class="links"><a href="https://github.com/skala-chok/chok" target="_blank" rel="noopener">[Code]</a></div></div></div><div class="entry"><div class="thumb"><img src="assets/helpdesk_workflow.svg" alt="" loading="lazy"></div>
+<div><b class="t">티켓 환불 상담 Agent</b><p>규정은 RAG로, 본인 예매는 Tool로 확인해 답하는 Spring AI 상담 Agent. 환불 실행은 승인 대기 티켓으로 분리하고, 출처 · 권한 · 행동을 채점하는 Golden Set을 만들어 <b>6/6</b> 시나리오를 통과했습니다.</p><div class="meta">개인 프로젝트 · 2026.08 · Spring Boot, Spring AI, pgvector</div></div></div><div class="entry"><div class="thumb"><img src="assets/lora_card.png" alt="" loading="lazy"></div>
+<div><b class="t">sLLM 도메인 파인튜닝 (LoRA SFT)</b><p>사내 업무 QA를 반영하지 못하던 Qwen2.5-1.5B를 LoRA SFT로 개선했습니다. 학습 조건을 통제해 비교한 결과 Base 대비 LLM Judge 1:1 비교 <b>20승 0패</b>, 팀 18개 조건 중 1위로 최종 채택됐습니다.</p><div class="meta">SKALA 팀 실습 · 2026.08 · PyTorch, LoRA</div></div></div><div class="entry"><div class="thumb phone"><img src="assets/polzzak_market.png" alt="" loading="lazy"></div>
+<div><b class="t">폴짝 · 폴라로이드 교환 플랫폼</b><p>SNS에 흩어진 교환 글을 검색 · 제안 · 합의 · 채팅까지 잇는 서비스를 1인 풀스택으로 개발 · 운영 중입니다. pgvector 시맨틱 검색, Pessimistic Lock 기반 동시성 제어, AI 장애 Fallback, GitHub Actions → Cloud Run 배포.</p><div class="meta">개인 프로젝트 · 2026.08 – 현재 · Spring Boot, Vue 3, PostgreSQL</div></div></div><div class="entry"><div class="thumb"><img src="assets/bdi_cycle.svg" alt="" loading="lazy"></div>
+<div><b class="t">BDI AIOps</b><p>재학습이 끝나도 Holdout 검증을 통과하기 전엔 서빙 모델을 바꾸지 않는 MLflow 파이프라인. 비동기 재학습, 중복 실행 방지, Model Registry 기반 버전 · 판정 이력 관리를 담당했습니다.</p><div class="meta">SKALA 팀 프로젝트 · 2026.10 · MLflow, Docker, Python</div></div></div></section>
+
+<section id="publications"><h2>Publications</h2><div class="pub"><div class="thumb"><img src="assets/cj_p07_i00.png" alt="" loading="lazy"></div><div><b class="t" style="display:block;font-size:15.5px;line-height:1.45">Function-adaptive Affordance Extraction from 3D Objects using LLM for Interaction Authoring with Augmented Artifacts</b><div><span class="role">제1저자</span><span class="venue">IEEE ISMAR-Adjunct 2024</span></div></div></div><div class="pub"><div class="thumb empty"></div><div><b class="t" style="display:block;font-size:15.5px;line-height:1.45">Clinical Features-based Lifestyle Quantification Using Mobile Devices for Personalized Augmented Reality Intervention</b><div><span class="role">공동저자</span><span class="venue">IEEE ISMAR-Adjunct 2025</span></div></div></div><div class="pub"><div class="thumb empty"></div><div><b class="t" style="display:block;font-size:15.5px;line-height:1.45">입력 이미지 수와 장면의 동적 특성에 기반한 Gaussian Splatting의 정량적 최적 학습 조건</b><div><span class="role">공동저자</span><span class="venue">한국소프트웨어종합학술대회 2023</span></div></div></div></section>
+
+<section id="education"><h2>Education</h2>
+<div class="item"><div class="row"><b>KAIST</b><span>2023.09 – 2026.08</span></div><p>문화기술대학원 석사 수료 · Ubiquitous Virtual Reality Lab (지도교수 우운택)</p></div><div class="item"><div class="row"><b>성균관대학교</b><span>2018.03 – 2023.08</span></div><p>컴퓨터교육과 · 멀티미디어공학 복수전공 학사</p></div>
+<h2 style="margin-top:28px">Experience</h2>
+<div class="item"><div class="row"><b>SK AI 전문가 양성과정 SKALA</b><span>2026.07 –</span></div><p>RAG · SFT · Agent, Spring Boot · MSA 팀 프로젝트 · SafePass Scrum Master</p></div><div class="item"><div class="row"><b>KIST 지능로봇연구단</b><span>2023.02 – 2023.06</span></div><p>인턴 · VR 다중 로봇 작업 인터페이스 개발, 파일럿 실험(5명)에서 작업 속도 약 30% 향상</p></div>
+</section>
+
+<section><h2>Skills</h2><dl class="skills">
+<dt>Agent / RAG</dt><dd>LangChain, LangGraph, Spring AI, Tool Calling, pgvector, FAISS</dd>
+<dt>AI / ML</dt><dd>PyTorch, LoRA SFT, MLflow, LLM Judge</dd>
+<dt>Backend</dt><dd>Spring Boot, FastAPI, PostgreSQL, Docker, GitHub Actions, Cloud Run</dd>
+<dt>Languages</dt><dd>Python, Java, C#</dd>
+</dl></section>
+</main>
+<footer><div class="wrap">© 2026 Eunhee Jeong</div></footer>
+</body></html>
